@@ -8,17 +8,16 @@ export default defineConfig({
       registerType: 'autoUpdate',
       devOptions: {
         enabled: true,
-        type: 'module',
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,ttf}'],
       },
       includeAssets: ['app-icon.svg', 'main.css', 'Pacifico-Regular.ttf'],
       manifest: {
-        name: 'Vite pwa example',
-        short_name: 'Vite-pwa',
+        name: 'vite pwa example',
+        short_name: 'vite-pwa',
+        description: 'example for vite pwa plugin',
         theme_color: '#ffffff',
-        description: 'Cool vite pwa example plugin',
         icons: [
           {
             src: 'icons/icon-192x192.png',
